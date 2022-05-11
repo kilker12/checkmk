@@ -1,0 +1,15 @@
+#!/usr/bin/env python3
+
+import argparse
+import requests
+
+
+if __name__ == '__main__':
+    arg_parser = argparse.ArgumentParser()
+    required_param_group = arg_parser.add_argument_group('required arguments')
+    required_param_group.add_argument('-w', '--who', required=True, help="Who is it")
+    args = arg_parser.parse_args()
+
+    print('<<<joey_agent_section>>>')
+    print('Joey')
+    print(args.who)
